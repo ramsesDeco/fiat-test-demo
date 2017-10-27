@@ -15,5 +15,23 @@ html, body
 body
   padding-top: 51px;
   padding-bottom: 50px;
+  position: relative;
+  .red-background
+    position: fixed;
+    top: 60%;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+    background: #ff0000;
+    &:after
+      content: '';
+      position: absolute;
+      background: #ff0000;
+      top: -25%;
+      left: -25%;
+      display: block;
+      width: 150%;
+      height: 20vh;
+      transform: rotate(-7deg);
     
 @import '_includes/_styles';
