@@ -1,0 +1,8 @@
+mixin selectCustomized(label, options)
+    #select.input-custom.input-md.col-lg-6.col-md-6.col-sm-6.col-xs-12
+        label=label
+        select.form-control
+            option(value='-1', disabled='', selected='') Selecciona
+             each opt in options
+                option(value=opt.value)=opt.name
+        span.dropdown__arrow 

@@ -1,0 +1,15 @@
+include _includes/input/select.pug
+include _includes/input/input.pug
+
+
+form.main-form.container
+
+    .input-group
+        +selectCustomized('Modelo', [{value: 0, name: 'Mobi'}, {value: 1, name: 'Uno'}])
+        +selectCustomized('Versión', [{value: 0, name: 'Mobi easy'}, {value: 1, name: 'Uno Like'}])
+
+    .input-group
+        +selectCustomized('Estado', [{value: 0, name: 'Coahuila'}, {value: 1, name: 'Nuevo Leon'}])
+        +selectCustomized('Distribuidor', [{value: 0, name: 'Fiat Coahuila'}, {value: 1, name: 'Fiat Nuevo Leon'}])
+
+    include _includes/personal_data.pug

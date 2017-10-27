@@ -1,0 +1,9 @@
+mixin inputCustomized(label, input)
+    #input.input-custom.input-md
+        label=label
+        
+        case input.type
+            when 'number'
+                input(type='text', placeholder=input.placeholder, pattern="\d*").form-control
+            default
+                input(type=input.type, placeholder=input.placeholder).form-control

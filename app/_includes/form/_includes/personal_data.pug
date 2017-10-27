@@ -1,0 +1,33 @@
+include form_title.pug
+
+#personal_data
+    +formTitle('Datos Personales', 'Escribe tus datos personales')
+
+    .input-group
+        .col-lg-4.col-md-4.col-sm-4.col-xs-12
+            +inputCustomized('Nombre (s)', {type:'text', placeholder:'Ej. Juan'})
+        .col-lg-4.col-md-4.col-sm-4.col-xs-12
+            +inputCustomized('Apellido Paterno', {type:'text', placeholder:'Ej. López'})
+        .col-lg-4.col-md-4.col-sm-4.col-xs-12
+            +inputCustomized('Apellido Materno', {type:'text', placeholder:'Ej. Tovar'})
+
+
+    .input-group
+
+        .col-lg-4.col-md-4.col-sm-4.col-xs-12
+            +inputCustomized('Email', {type:'email', placeholder:'Tu@email.com'})
+        
+        .col-lg-4.col-md-4.col-sm-4.col-xs-12
+            +inputCustomized('Teléfono', {type:'number', placeholder:'0184443906'})
+
+
+    .input-group
+        .buttons-area.input-custom.col-xs-12
+            button.col-lg-4.col-md-4.col-sm-4.col-xs-4.active
+                i.glyphicon.glyphicon-earphone
+                span Teléfono
+            button.col-lg-4.col-md-4.col-sm-4.col-xs-4
+                i.glyphicon.glyphicon-envelope
+                span Email
+            button.col-lg-4.col-md-4.col-sm-4.col-xs-4
+                span ambos
