@@ -18,14 +18,10 @@
         .col-lg-4.col-md-4.col-sm-4.col-xs-12
             +inputCustomized('Teléfono', {type:'number', placeholder:'0184443906'})
 
-
     .input-group
-        .buttons-area.input-custom.col-xs-12
-            button.col-lg-4.col-md-4.col-sm-4.col-xs-4.active
-                i.glyphicon.glyphicon-earphone
-                span Teléfono
-            button.col-lg-4.col-md-4.col-sm-4.col-xs-4
-                i.glyphicon.glyphicon-envelope
-                span Email
-            button.col-lg-4.col-md-4.col-sm-4.col-xs-4
-                span ambos
+        .col-xs-12
+            +radioCustomized(
+                {label:'', nameControl: 'contact'},
+                [{text:'Teléfono', value:1, icon: 'glyphicon glyphicon-earphone'},
+                {text:'Email', value:2, icon: 'glyphicon glyphicon-envelope'},
+                {text:'Ambos', value:3}])

@@ -1,9 +1,11 @@
-mixin radioCustomized(label, options)
+mixin radioCustomized(settings, options)
     #input-radio-group.input-custom.input-md
-        label=label
-        each opt in options
-            .input-radio(class={'col-xs-6': options.length === 2, 'col-xs-4': options.length === 3, 'col-xs-12': options.length === 1})
-                input(type='radio', name=label, value=opt.value).form-control
-                .radio-box
-                    span=opt.text
-            
+        label=settings.label
+        .radio-group
+            each opt in options
+                .input-radio(class={'col-xs-6': options.length === 2, 'col-xs-4': options.length === 3, 'col-xs-12': options.length === 1})
+                    input(type='radio', name=settings.nameControl, value=opt.value).form-control
+                    .radio-box
+                        if opt.icon
+                            i(class=opt.icon)
+                        span=opt.text
