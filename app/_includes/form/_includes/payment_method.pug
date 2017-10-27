@@ -1,0 +1,15 @@
+#payment_method
+    +formTitle('Forma de pago', 'Personaliza tu cotizacion')
+
+    .input-group
+        .col-xs-12
+            +radioCustomized('Elije tu tipo de pago', [{text:'Contado', value:1}, {text:'Crédito', value:2}])
+
+
+    .input-group
+
+        .col-lg-6.col-md-6.col-sm-6.col-xs-12
+            +inputCustomized('Cantidad de enganche', {type:'number', placeholder:'80000'})
+        
+        .col-sm-6.col-xs-12
+            +selectCustomized('Plazo', [{value: 1, name: '72 meses'}, {value: 1, name: '104 meses'}])
