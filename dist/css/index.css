@@ -6095,7 +6095,7 @@ body {
 .input-custom:nth-child(even) {
   margin-left: 0px; }
 
-.input-custom select, .input-custom input, .input-custom button {
+.input-custom select, .input-custom input, .input-custom button, .input-custom textarea {
   border: 1px solid #ff0000;
   color: #333333;
   background: #fff;
@@ -6103,8 +6103,18 @@ body {
   min-height: 35px;
   -webkit-border-radius: 0;
   border-radius: 0; }
-  .input-custom select.form-control, .input-custom input.form-control, .input-custom button.form-control {
+  .input-custom select.form-control, .input-custom input.form-control, .input-custom button.form-control, .input-custom textarea.form-control {
     margin-bottom: 0px; }
+
+.input-custom textarea {
+  height: 10em;
+  min-width: 100%;
+  max-width: 100%;
+  width: 100%;
+  resize: none; }
+
+.input-custom#input-radio-group label {
+  display: block; }
 
 .input-custom .input-radio {
   position: relative; }
@@ -6234,3 +6244,38 @@ body {
     width: 100%; }
     .main-form .input-group > * {
       margin-bottom: 40px; }
+  .main-form .checkbox-terms {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .main-form .checkbox-terms input[type=checkbox] {
+      width: 25px;
+      height: 25px;
+      color: #959595;
+      background: #ffffff;
+      border: 1px solid #959595; }
+    .main-form .checkbox-terms label {
+      margin: 0 0 0 .5em; }
+  .main-form .submit-area {
+    margin-top: 1em;
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; }
+    @media (max-width: 768px) {
+      .main-form .submit-area {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center; } }

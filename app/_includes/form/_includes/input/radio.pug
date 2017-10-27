@@ -1,6 +1,6 @@
 mixin radioCustomized(label, options)
     #input-radio-group.input-custom.input-md
-        label.col-xs-12=label
+        label=label
         each opt in options
             .input-radio(class={'col-xs-6': options.length === 2, 'col-xs-4': options.length === 3, 'col-xs-12': options.length === 1})
                 input(type='radio', name=label, value=opt.value).form-control

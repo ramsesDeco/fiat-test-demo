@@ -1,6 +1,7 @@
 include _includes/input/select.pug
 include _includes/input/input.pug
 include _includes/input/radio.pug
+include _includes/input/text_area.pug
 include _includes/form_title.pug
 
 
@@ -21,3 +22,17 @@ form.main-form.container
 
     include _includes/personal_data.pug
     include _includes/payment_method.pug
+    include _includes/comment.pug
+
+    .checkbox-terms
+        input(type='checkbox', name='privacyTerms', id='privacyTerms')
+        label(for="privacyTerms") He leído y acepto el 
+            u aviso de privacidad
+        
+    .checkbox-terms
+        input(type='checkbox', name='offers', id='offers')
+        label(for="offers") No deseo recibir promociones
+    
+    .submit-area
+        .input-custom.input-md.col-xs-6.col-sm-3
+            input(type='submit', value='ENVIAR').form-control

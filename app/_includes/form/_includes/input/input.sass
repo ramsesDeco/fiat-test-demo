@@ -13,11 +13,20 @@
         text-transform: uppercase;
     &:nth-child(even)
         margin-left: 0px;
-    select,input,button
+    select,input,button, textarea
         @include formaInput;
         &.form-control
             margin-bottom: 0px;
+    textarea
+        height: 10em;
+        min-width: 100%;
+        max-width: 100%;
+        width: 100%;
+        resize: none;
 
+    &#input-radio-group
+        label
+            display: block;
     .input-radio
         position: relative;
         &:after
@@ -41,6 +50,8 @@
             right: 0;
             width: 100%;
             height: 100%;
+
+
     button
         display: flex;
         justify-content: center;

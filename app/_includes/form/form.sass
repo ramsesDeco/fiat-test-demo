@@ -11,3 +11,23 @@
         width: 100%;
         & > *
             margin-bottom: 40px;
+    .checkbox-terms
+        display: flex;
+        align-items: center;
+        input[type=checkbox]
+            width: 25px;
+            height: 25px;
+            color: #959595;
+            background: #ffffff;
+            border: 1px solid #959595;
+        label
+            margin: 0 0 0 .5em;
+    
+    .submit-area
+        margin-top: 1em;
+        padding: 0;
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        @media (max-width: $screen-sm)
+            justify-content: center;
