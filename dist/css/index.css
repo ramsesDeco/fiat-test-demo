@@ -5964,7 +5964,7 @@ button.close {
 
 @font-face {
   font-family: 'Playfair_Display';
-  src: url(../fonts/Playfair_Display/PlayfairDisplay-BlackItalic); }
+  src: url(../fonts/Playfair_Display/PlayfairDisplay-BlackItalic.ttf); }
 
 * {
   -webkit-box-sizing: border-box !important;
@@ -5975,22 +5975,27 @@ a:hover, a:link, a:visited, a:active, a:focus {
   text-decoration: none; }
 
 html, body {
-  font-family: 'Lato Regular'; }
+  font-family: 'Lato Regular';
+  background: #4957d1; }
+
+body {
+  padding-top: 51px; }
 
 #header {
-  border-bottom: 1px solid #e6e6e6; }
+  border-bottom: 1px solid #e6e6e6;
+  background-color: #ffffff; }
   #header .container {
     position: relative; }
     @media (min-width: 768px) {
       #header .container {
-        padding-right: 50px; } }
+        padding-right: 65px; } }
   #header .navbar-toggle {
     margin: 6px 15px 0 0; }
     @media (min-width: 768px) {
       #header .navbar-toggle {
         display: block !important;
         position: absolute;
-        right: 0;
+        right: 15px;
         margin-right: 0;
         margin-left: 0;
         pointer-events: none; } }
@@ -6023,3 +6028,59 @@ html, body {
         -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
         justify-content: space-between; } }
+
+#landing {
+  color: #ffffff;
+  padding-top: 2em; }
+  #landing .container {
+    text-align: center; }
+  #landing h4 {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 3px; }
+  #landing .message {
+    color: #000000;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-transform: uppercase;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin: 10px 0;
+    font-family: 'Playfair Display';
+    font-weight: bolder; }
+    #landing .message .bar {
+      height: 2px;
+      background-color: #000000;
+      width: 55px;
+      display: block;
+      margin: 0 15px; }
+  #landing h3 {
+    font-family: 'Playfair Display';
+    font-size: 7.5em;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 0; }
+  #landing figure {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: -20px; }
+    #landing figure img {
+      max-width: 470px;
+      width: 90%;
+      margin-left: -30px; }
