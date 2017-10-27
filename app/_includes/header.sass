@@ -1,0 +1,42 @@
+#header
+    border-bottom: 1px solid #e6e6e6;
+
+    .container
+        position: relative;
+        @media (min-width: $screen-sm)
+            padding-right: 50px;
+
+    .navbar-toggle
+        margin: 6px 15px 0 0;
+        // To keep the hamburguer menu
+        @media (min-width: $screen-sm)
+            display: block!important;
+            position: absolute;
+            right: 0;
+            margin-right: 0;
+            margin-left: 0;
+            pointer-events: none;
+        .icon-bar
+            background-color: #ce3033;
+            height: 3px;
+    // This is because logo png has area
+    .fiat-logo
+        margin-top: -30px;
+        margin-left: -20px;
+
+    > .container
+        #navbar
+            width: 100%;
+            font-family: 'gill-sans';
+            font-weight: bold;
+            text-transform: uppercase;
+        @media (min-width: $screen-sm)
+            display: flex;
+            #navbar
+                > .nav
+                    &:before, &:after
+                        display: none;
+                ul
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
