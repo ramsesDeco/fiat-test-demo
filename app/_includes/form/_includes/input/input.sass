@@ -27,6 +27,7 @@
     &#input-radio-group
         .radio-group
             display: flex;
+            flex-wrap: wrap;
         label
             display: block;
     .input-radio
@@ -54,24 +55,13 @@
             @include formaInput;
             width: 100%;
             height: 100%;
-            i
-                padding: 0 10px;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
             text-transform: uppercase;
-
-
-    button
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        text-transform: uppercase;
-        font-size: .8em;
-        i
-            padding: 0 10px;
-        &.active
-            background-color: #ff000d;
-            color: #ffffff;
+            i
+                padding: 5px 10px;
+            span
+                width: 75px;
+                text-align: center

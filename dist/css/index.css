@@ -5976,7 +5976,9 @@ a:hover, a:link, a:visited, a:active, a:focus {
 
 html, body {
   font-family: 'Lato Regular';
-  background: #4957d1; }
+  background: #4957d1;
+  max-width: 100%;
+  width: 100%; }
 
 body {
   padding-top: 51px;
@@ -6054,11 +6056,11 @@ body {
     -ms-flex-align: center;
     align-items: center;
     text-transform: uppercase;
-    word-spacing: 5px;
-    letter-spacing: 3px;
+    word-spacing: 2px;
     margin: 10px 0;
     font-family: 'Playfair Display';
-    font-weight: bolder; }
+    font-weight: bolder;
+    font-size: 1.2em; }
     #landing .message .bar {
       height: 2px;
       background-color: #000000;
@@ -6072,19 +6074,24 @@ body {
     font-weight: bold;
     margin-bottom: 0; }
   #landing figure {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     margin-top: -20px; }
     #landing figure img {
       max-width: 470px;
-      width: 90%;
-      margin-left: -30px; }
+      width: 80%;
+      margin-left: -30px;
+      height: auto; }
+  @media (max-width: 480px) {
+    #landing .message .bar {
+      display: none; }
+    #landing h3 {
+      font-size: 3em; }
+    #landing figure {
+      margin-top: 0px; } }
+  @media (min-width: 480px) and (max-width: 1199px) {
+    #landing h3 {
+      font-size: 6em; }
+    #landing figure {
+      margin-top: 0px; } }
 
 .input-custom label {
   text-indent: 10px;
@@ -6117,7 +6124,10 @@ body {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .input-custom#input-radio-group label {
   display: block; }
@@ -6170,31 +6180,10 @@ body {
     flex-wrap: wrap;
     text-transform: uppercase; }
     .input-custom .input-radio .radio-box i {
-      padding: 0 10px; }
-
-.input-custom button {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  text-transform: uppercase;
-  font-size: .8em; }
-  .input-custom button i {
-    padding: 0 10px; }
-  .input-custom button.active {
-    background-color: #ff000d;
-    color: #ffffff; }
+      padding: 5px 10px; }
+    .input-custom .input-radio .radio-box span {
+      width: 75px;
+      text-align: center; }
 
 .form-title {
   margin-bottom: 40px; }
@@ -6253,7 +6242,8 @@ body {
   padding: 14em 6em 6em 6em; }
   @media (max-width: 480px) {
     .main-form {
-      padding: 7em 1em 3em 1em; } }
+      margin-top: -4em;
+      padding: 6em 1em 3em 1em; } }
   @media (min-width: 480px) and (max-width: 1199px) {
     .main-form {
       padding: 9em 5em 3em 5em; } }
